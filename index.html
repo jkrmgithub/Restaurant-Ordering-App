@@ -1,0 +1,43 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main id="main">
+            <header>
+                <div>
+                    Jimmy's Diner 👨🏻‍🍳
+                </div>
+            </header>
+            <div class="menu-container">
+                <div id="menu"></div>
+            </div>
+            <div>
+                <div class="order-heading hidden" id="order-heading">Your order</div>
+                <h5 class="warning-message hidden" id="warning-message">Please select items.</h5>
+            </div>
+            <div id="order-list""></div>
+            <div id="orderTotal"></div>
+            <div class="complete-order-btn-container">
+                <button class="complete-order-btn hidden" id="complete-order-btn">Complete order</button>
+            </div>
+            <div class="payment-modal hidden" id="payment-modal">
+                <form class="payment-form " onsubmit="return false">
+                    <h4>Enter card details</h4>
+                    <input type="text" class="input-box" placeholder="Enter your name" id="customerName" required>
+                    <input type="text" class="input-box" placeholder="Enter card number" required>
+                    <input type="text" class="input-box" placeholder="Enter CVV" required>
+                    <button class="pay-btn" id="pay-btn">Pay</button>
+                </form>
+            <!-- <div id="thank-you">
+            </div> -->
+        </main>
+	<script src="index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    </body>
+</html>
+
